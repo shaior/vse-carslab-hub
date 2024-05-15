@@ -7,8 +7,8 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/redhat-partner-solutions/vse-carslab-hub
-        revision: main
+        repoURL: https://github.com/shaior/vse-carslab-hub
+        revision: hub-config
         directories:
           - path: core/*
   template:
@@ -27,8 +27,8 @@ spec:
             factor: 2
             maxDuration: 5m
       source:
-        repoURL: https://github.com/redhat-partner-solutions/vse-carslab-hub
-        targetRevision: main
+        repoURL: https://github.com/shaior/vse-carslab-hub
+        targetRevision: hub-config
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
